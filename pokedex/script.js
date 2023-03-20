@@ -49,7 +49,7 @@ const renderPokemon = async (pokemon) => {
   } else {
     // Se o Pokémon não for encontrado, esconde a imagem do Pokémon, define o nome do Pokémon como "Not found :c" e o número do Pokémon como vazio
     pokemonImage.style.display = "none";
-    pokemonName.innerHTML = "Not found :c";
+    pokemonName.innerHTML = "Não encontrado :c";
     pokemonNumber.innerHTML = "";
   }
 };
