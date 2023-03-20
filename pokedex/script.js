@@ -9,6 +9,15 @@ const input = document.querySelector("#pokemonSearch");
 const buttonPrev = document.querySelector("#btnAnterior");
 const buttonNext = document.querySelector("#btnProximo");
 
+// Modal
+const openModalButton = document.querySelector("#sobre");
+const closeModalButton = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+// Conteudo do modal
+const modalPokemonName = document.querySelector("#modalPokemonName");
+
 // Variável para armazenar o número do Pokémon a ser pesquisado
 let searchPokemon = 1;
 
@@ -39,6 +48,7 @@ const renderPokemon = async (pokemon) => {
     // Se os dados do Pokémon forem encontrados, exibe a imagem do Pokémon, seu nome e número, e atualiza a variável searchPokemon com o número do Pokémon atual
     pokemonImage.style.display = "block";
     pokemonName.innerHTML = data.name;
+    modalPokemonName.innerHTML = data.name.toUpperCase();
     pokemonNumber.innerHTML = data.id;
     pokemonImage.src =
       data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
@@ -76,3 +86,13 @@ buttonNext.addEventListener("click", () => {
 
 // Renderiza o primeiro Pokémon ao carregar a página
 renderPokemon(searchPokemon);
+
+// Modal
+const toggleModal = () => {
+  modal.classList.toggle("hide");
+  fade.classList.toggle("hide");
+};
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => toggleModal());
+});
