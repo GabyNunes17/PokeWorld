@@ -15,6 +15,23 @@ body {
   min-height: 100vh;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #dc0a2d;
+}
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: ruslan display;
+}
+i {
+  font-size: 1.5rem;
+  color: #000;
+}
+
 main {
   display: inline-block;
   margin-top: 2%;
@@ -56,7 +73,7 @@ form {
   left: 13.5%;
 }
 
-form input#PokemonSearch {
+form input#pokemonSearch {
   width: 100%;
   padding: 4%;
   outline: none;
@@ -88,7 +105,6 @@ button {
   color: white;
   background-color: #444;
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
-
   cursor: pointer;
 }
 

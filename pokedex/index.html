@@ -4,11 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PokeWorld - Pokedex</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>PokeWorld - Pokedex</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <a href="../index.html"
+        ><i class="fa-sharp fa-solid fa-arrow-left-long"></i
+      ></a>
+      <h1>POKEWORLD</h1>
+      <i></i>
+    </header>
     <main>
       <img src="#" alt="pokemon" id="pokemonImg" />
 
@@ -19,7 +35,7 @@
       <form>
         <input
           type="search"
-          id="PokemonSearch"
+          id="pokemonSearch"
           placeholder="Digite o nome ou ID do Pokemon"
           required
         />
@@ -30,7 +46,8 @@
         <button id="btnProximo">Próximo</button>
       </div>
 
-      <img src="../assets/pokedex.png" alt="pokedex" id="pokedex">
+      <img src="../assets/pokedex.png" alt="pokedex" id="pokedex" />
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
