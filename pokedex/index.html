@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importando arquivo de estilos -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Importando ícones do Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <!-- Pré-carregando fonte do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Importando fonte personalizada -->
     <link
       href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap"
       rel="stylesheet"
@@ -18,20 +22,26 @@
     <title>PokeWorld - Pokedex</title>
   </head>
   <body>
+    <!-- Cabeçalho da página -->
     <header>
-      <a href="../index.html"
-        ><i class="fa-sharp fa-solid fa-arrow-left-long"></i
-      ></a>
+      <!-- Link para página anterior -->
+      <a href="/"><i class="fa-sharp fa-solid fa-arrow-left-long"></i></a>
+      <!-- Título principal -->
       <h1>POKEWORLD</h1>
+      <!-- Ícone para futuras funcionalidades -->
       <i></i>
     </header>
+    <!-- Conteúdo principal da página -->
     <main>
+      <!-- Imagem do Pokémon -->
       <img src="#" alt="pokemon" id="pokemonImg" />
 
+      <!-- Nome e número do Pokémon -->
       <h1 id="pokemonData">
         <span id="pokemonNum"></span> - <span id="pokemonName"></span>
       </h1>
 
+      <!-- Campo de busca -->
       <form>
         <input
           type="search"
@@ -41,13 +51,16 @@
         />
       </form>
 
+      <!-- Botões para navegação entre Pokémon -->
       <div id="btns">
         <button id="btnAnterior">Anterior</button>
         <button id="btnProximo">Próximo</button>
       </div>
 
+      <!-- Imagem da Pokédex -->
       <img src="../assets/pokedex.png" alt="pokedex" id="pokedex" />
     </main>
+    <!-- Arquivo de script -->
     <script src="script.js"></script>
   </body>
 </html>

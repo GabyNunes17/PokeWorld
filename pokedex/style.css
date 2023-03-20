@@ -1,3 +1,4 @@
+/* Definições universais para todos os elementos HTML */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: cursive;
 }
 
+/* Definições do corpo da página */
 body {
   text-align: center;
   background-image: url(../assets/bg-pokedex.png);
@@ -15,6 +17,7 @@ body {
   min-height: 100vh;
 }
 
+/* Definições do cabeçalho da Pokedex */
 header {
   display: flex;
   justify-content: space-between;
@@ -22,16 +25,21 @@ header {
   padding: 1rem;
   background-color: #dc0a2d;
 }
+
+/* Definições do título principal da Pokedex */
 h1 {
   font-size: 2rem;
   color: #fff;
   font-family: ruslan display;
 }
+
+/* Definições do ícone da Pokedex */
 i {
   font-size: 1.5rem;
   color: #000;
 }
 
+/* Definições da seção principal da Pokedex */
 main {
   display: inline-block;
   margin-top: 2%;
@@ -39,11 +47,13 @@ main {
   position: relative;
 }
 
+/* Definições da imagem da Pokedex */
 img#pokedex {
   width: 100%;
   max-width: 425px;
 }
 
+/* Definições da imagem do Pokémon */
 img#pokemonImg {
   position: absolute;
   bottom: 55%;
@@ -52,6 +62,7 @@ img#pokemonImg {
   height: 18%;
 }
 
+/* Define estilos para o nome e dados do Pokémon */
 h1#pokemonData {
   position: absolute;
   font-weight: 600;
@@ -66,6 +77,7 @@ h1#pokemonData span#pokemonName {
   text-transform: capitalize;
 }
 
+/* Define estilos para o formulário de busca */
 form {
   position: absolute;
   width: 65%;
@@ -85,6 +97,7 @@ form input#pokemonSearch {
   box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
 
+/* Define estilos para os botões de ação */
 div#btns {
   position: absolute;
   bottom: 10%;
