@@ -17,6 +17,8 @@ const fade = document.querySelector("#fade");
 
 // Conteudo do modal
 const modalPokemonName = document.querySelector("#modalPokemonName");
+const modalPokemonImg = document.querySelector("#modalPokemonImg");
+const modalPokemonType = document.querySelector("#modalPokemonType");
 
 // Variável para armazenar o número do Pokémon a ser pesquisado
 let searchPokemon = 1;
@@ -49,6 +51,8 @@ const renderPokemon = async (pokemon) => {
     pokemonImage.style.display = "block";
     pokemonName.innerHTML = data.name;
     modalPokemonName.innerHTML = data.name.toUpperCase();
+    modalPokemonImg.src = pokemonImage.src = data["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
+    modalPokemonType.innerHTML = data['types'][0]['type']['name']
     pokemonNumber.innerHTML = data.id;
     pokemonImage.src =
       data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
