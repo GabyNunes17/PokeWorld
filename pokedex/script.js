@@ -19,6 +19,16 @@ const fade = document.querySelector("#fade");
 const modalPokemonName = document.querySelector("#modalPokemonName");
 const modalPokemonImg = document.querySelector("#modalPokemonImg");
 const modalPokemonType = document.querySelector("#modalPokemonType");
+const modalPokemonDescription = document.querySelector(
+  "#modalPokemonDescription"
+);
+const modalPokemonHeight = document.querySelector("#modalPokemonHeight");
+const modalPokemonWeight = document.querySelector("#modalPokemonWeight");
+const modalPokemonAbilities = document.querySelector("#modalPokemonAttributes");
+const modalPokemonStats = document.querySelector("#modalPokemonStats");
+const modalPokemonTypes = document.querySelector("#modalPokemonTypes");
+const modalPokemonNum = document.querySelector("#modalPokemonNum");
+const modalPokemonEvolution = document.querySelector("#modalPokemonEvolution");
 
 // Variável para armazenar o número do Pokémon a ser pesquisado
 let searchPokemon = 1;
@@ -50,16 +60,39 @@ const renderPokemon = async (pokemon) => {
     // Se os dados do Pokémon forem encontrados, exibe a imagem do Pokémon, seu nome e número, e atualiza a variável searchPokemon com o número do Pokémon atual
     pokemonImage.style.display = "block";
     pokemonName.innerHTML = data.name;
-    modalPokemonName.innerHTML = data.name.toUpperCase();
-    modalPokemonImg.src = pokemonImage.src = data["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
-    modalPokemonType.innerHTML = data['types'][0]['type']['name']
     pokemonNumber.innerHTML = data.id;
-    pokemonImage.src =
-      data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
-        "front_default"
-      ];
+    if (data.id < 650) {
+      pokemonImage.src =
+        data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
+          "front_default"
+        ];
+    } else {
+      pokemonImage.src = data["sprites"]["front_default"];
+    }
     input.value = "";
     searchPokemon = data.id;
+
+    // Modal
+    modalPokemonName.innerHTML = data.name.toUpperCase();
+    modalPokemonNum.innerHTML = "#" + data.id;
+    modalPokemonImg.src = data["sprites"]["front_default"];
+    modalPokemonType.innerHTML =
+      data["types"][0]["type"]["name"][0].toUpperCase() +
+      data["types"][0]["type"]["name"].slice(1);
+    modalPokemonHeight.innerHTML = data["height"] / 10 + " m";
+    modalPokemonWeight.innerHTML = data["weight"] / 10 + " Kg";
+    modalPokemonAttributes.innerHTML = data["abilities"]
+      .map((ability) => `${ability["ability"]["name"]}`)
+      .join(", <br />");
+    modalPokemonTypes.innerHTML = data["types"].map(
+      (type) =>
+        `${
+          type["type"]["name"][0].toUpperCase() + type["type"]["name"].slice(1)
+        }`
+    );
+    modalPokemonStats.innerHTML = data["stats"].map(
+      (stat) => `${stat["stat"]["name"]}: ${stat["base_stat"]}`
+    );
   } else {
     // Se o Pokémon não for encontrado, esconde a imagem do Pokémon, define o nome do Pokémon como "Not found :c" e o número do Pokémon como vazio
     pokemonImage.style.display = "none";
