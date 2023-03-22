@@ -97,7 +97,6 @@ form input#pokemonSearch {
   box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
 
-
 /* Define estilos para os botões de ação */
 div#btns {
   position: absolute;
@@ -138,7 +137,8 @@ div#btns button {
   cursor: pointer;
 }
 
-div#btns button:active, button#sobre:active {
+div#btns button:active,
+button#sobre:active {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
 }
@@ -201,4 +201,10 @@ div#btns button:active, button#sobre:active {
 #close-modal {
   padding: 0.3rem;
   cursor: pointer;
+  background-color: #dc0a2d;
+  border: none;
+}
+
+#close-modal i {
+  color: #fff;
 }
