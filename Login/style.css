@@ -200,7 +200,7 @@ h2:hover{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 468px) {
+@media only screen and (max-width: 468px) {
     .login_body {
         width: 100%;
         padding: 28px;
@@ -223,7 +223,7 @@ h2:hover{
 }
 
 
-@media  screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
         body {
             width: 100%;
             
@@ -253,7 +253,7 @@ h2:hover{
             height: 94px;
             max-width:100%;
             margin-top: 0px;
-            margin-left: 85px;
+            margin-left: 94px;
             
         }
 
