@@ -57,7 +57,7 @@ $cards
   }).on("mouseout touchend touchcancel", function() {
     // remove css, apply custom animation on end
     var $card = $(this);
-    $style.html("");
+    $style.html("hover");
     $card.removeAttr("pokecards");
     x = setTimeout(function() {
       $card.addClass("animated");
