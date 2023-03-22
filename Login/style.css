@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(imagem/Fundo_pokemon.jpg);
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+
+.login_body { /* caixa do fundo*/
+    padding: 60px;
+    position: absolute;
+    max-width: 550px;
+    height: 580px;
+    margin-left: 50%;
+    top: 30px;
+    background-color: rgb(0, 0, 0, 0.74);
+    background-size: cover;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    
+}
+
+
+.fotologo {
+    position: relative;
+    height: 94px;
+    width:100px;
+    margin-left: 82px;
+    background-size: cover;
+    text-align: center;   
+}
+.fotologo:hover {
+    transform: scale(0.99);
+}
+.login_body h2{
+    font-size: 32px;
+    color: antiquewhite;
+    margin: 15px;
+    text-align: center;
+}
+
+h2:hover{
+    color: #e90e32;
+}
+
+
+.login_body input {
+    height: 50px;
+    width: 100%;
+    background-color: #edededb7;
+    border: none;
+    border-radius: 50px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.login_body input:hover{
+    background-color: #e2e2e2;
+    color: #b10824;
+}
+
+
+
+
+.input_box {
+    margin-bottom: 0px;
+    margin: -13px;
+    
+}
+
+.input::placeholder{
+    color: #b10824;
+}
+
+.input_box{
+    margin-left: 5px;
+    font-size: 20px;
+    padding: 8px 13px;
+    border-radius: 60px;
+    color: #000;
+}
+       
+.login_body button{
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #f10707;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 8px;
+    box-shadow: 5px 7px 0px #be0101;
+    margin-top: 15px;
+}
+
+.login_body button:hover{
+    background-color: #ff0202;
+    cursor: pointer;/* efeito mãozinha*/
+    transform: scale(0.96);
+}
+
+
+.support {
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.support input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+
+.remember{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.remember a:hover{
+    cursor: pointer;
+}
+
+.remember span {
+    margin-right: 5px;
+    height: 35px;
+}
+
+
+.help{
+    margin-top: 10px;
+}
+
+.help a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.help a:hover{
+    text-decoration: underline;
+}
+
+.sing-up {
+    color: #ffffff;
+    font-size: 18px;
+    
+}
+
+.sing_up a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sing_up a:hover {
+    text-decoration: underline;
+    color: #DC0A2D;
+}
+
+.sing_up p {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.terms {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 468px) {
+    .login_body {
+        width: 100%;
+        padding: 28px;
+        margin: 0;
+        height:580px;
+        justify-content: center;
+        
+    }
+
+    .logo {
+    position: relative;
+    height: 94px;
+    width:100px;
+    margin-left: 0px;
+   
+    }
+
+    
+    
+}
+
+
+@media  screen and (max-width: 768px) {
+        body {
+            width: 100%;
+            
+        }
+        section {
+            max-width:100%;
+            padding: 0;
+            margin-left: 44%;
+            height:580px;
+            margin-top: 0px;
+            justify-content: center;
+            padding: 28px;
+        }
+
+        .login_body {
+            width: 100%;
+            padding: 25px;
+            margin: 0;
+            height:580px;
+            justify-content: center;
+            
+            
+        }
+    
+        .logo  {
+            position: relative;
+            height: 94px;
+            max-width:100%;
+            margin-top: 0px;
+            margin-left: 85px;
+            
+        }
+
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
