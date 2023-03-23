@@ -5,7 +5,7 @@
 }
 main{
     width: 100%;
-    height: 500px;
+    height: 800px;
     background: linear-gradient(104.04deg, #C0F2E9 14.79%, #F6C093 50.52%, #C4D5FA 87.02%), #FFFFFF;
     z-index: -1;
 }
@@ -109,3 +109,128 @@ header{
     height: 550px;
     transform: translate(-60%,-30%);
   }
+
+#logo{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    float: left;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin: auto; 
+}
+
+#logo h1{
+    color: #fff;
+    margin: auto;
+}
+
+header input{
+    width: 100%;
+    height: 30px;
+    margin-left: 80%;
+    margin: auto;
+    border-radius: 20px;  
+}
+
+#txt{
+  position: absolute;
+  padding: 28px 0;
+  width: 20%;
+  height: 20px;
+  margin-left: 78%;
+  float: left;
+}
+
+#titulo{
+ text-align: center;
+ padding: 20px;
+ font-size: 50px;
+}
+
+#pokeNomal{
+  width: 100%;
+  height: 500px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#pk1{
+  width: 20%;
+  height: 460px;
+  background: #DC9292;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk2{
+  width: 20%;
+  height: 460px;
+  background: #78ADB9;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk3{
+  width: 20%;
+  height: 460px;
+  background: #C4D270;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk4{
+  width: 20%;
+  height: 460px;
+  background: #A095E4;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.pkb1{
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+}
+
+.pkb2{
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+}
+
+.pkb3{
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+}
+
+.pkb4{
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+}

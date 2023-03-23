@@ -7,51 +7,73 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css"/>
-
-    <link rel="preconnect"  href="https://fonts.googleapis.com"/>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <main id=app>
+    <script src="pokecards.js"></script>
+    <main class="app">
       <header>
-        <div id="logo">
-          <img src="assets/pokeLogo.png" alt="" />
-          <h1>POKEWORLD</h1>
-        </div>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pokedex/index.html">Pokédex</a></li>
+                <li><a href="../pokeballs/index.html">Pokeballs</a></li>
+                <li><a href="../Login/index.html">Login ou Registre-se</a></li>
+              </ul>
+            </nav> 
+          </div>
+          <div class="menu-bg" id="menu-bg"></div>
 
-        <input type="text" />
+          <section id="logo">
+            <img src="../assets/pokeLogo.png" alt="">
+            <h1>POKEWORLD</h1>
+          </section>
+          <div id="txt">
+            <input type="text"/>
+          </div>
+    </header>
       </header>
 
-      <div id="pokew">
-        <img src="assets/pokeworld.png" alt="" />
-      </div>
+      <section id="centro">
+          <img src="assets/pokeworld.png" id="PokeBig"/>
+          <a href=""><img src="assets/Pokedex2.png" id="pokeDex"/></a>
+      </section>
 
-      <div id="pokedex">
-        <img src="assets/Pokedex2.png" alt="" />
+      <section id="cards">
+        <div class="card charizard"></div>
+        <div class="card pika"></div>
+        <div class="card mew"></div>
+      </section>
+      
 
-      </div>
+      <section class="demo">
 
-      <div id="cards">
-        <section class="cards">
-          <div class="card charizard animated"></div>
-          <div class="card pika animated"></div>
-          <div class="card eevee animated"></div>
-          <div class="card mewtwo animated"></div>
-        </section>
-        
-        <style class="hover"></style>
-        
-        <section class="demo">
+      </section>
+      
+      <style class="hover"></style>
+
+      <section>
+        <div class="pokes_img">
+          <img id="esq" src="/imagens/home/image 28.png" alt="">
+          <img id="meio" src="/imagens/home/R 1.png" alt="">
+          <img id="dir" src="/imagens/home/507-5079769_espeon-png-espeon-pokemon 1.png" alt="">
+        </div>
+      </section>
+
+      <section class="sobre_nos">
+        <div class="fundo_sobre_nos">
+          <img class="ash" src="/imagens/home/image 5.png" alt="">
+        </div>
+      </section>
     
-        </section>
+      <footer>
 
-      </div>
+      </footer>
 
     </main>
   </body>

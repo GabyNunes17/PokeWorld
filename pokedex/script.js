@@ -18,7 +18,6 @@ const fade = document.querySelector("#fade");
 // Conteudo do modal
 const modalPokemonName = document.querySelector("#modalPokemonName");
 const modalPokemonImg = document.querySelector("#modalPokemonImg");
-const modalPokemonType = document.querySelector("#modalPokemonType");
 const modalPokemonDescription = document.querySelector(
   "#modalPokemonDescription"
 );
@@ -28,10 +27,72 @@ const modalPokemonAbilities = document.querySelector("#modalPokemonAttributes");
 const modalPokemonStats = document.querySelector("#modalPokemonStats");
 const modalPokemonTypes = document.querySelector("#modalPokemonTypes");
 const modalPokemonNum = document.querySelector("#modalPokemonNum");
-const modalPokemonEvolution = document.querySelector("#modalPokemonEvolution");
 
 // Variável para armazenar o número do Pokémon a ser pesquisado
 let searchPokemon = 1;
+
+function setModalColor(type) {
+  let color;
+  switch (type) {
+    case "fire":
+      color = "#F08030";
+      break;
+    case "water":
+      color = "#6890F0";
+      break;
+    case "grass":
+      color = "#78C850";
+      break;
+    case "electric":
+      color = "#F8D030";
+      break;
+    case "ice":
+      color = "#98D8D8";
+      break;
+    case "fighting":
+      color = "#C03028";
+      break;
+    case "poison":
+      color = "#A040A0";
+      break;
+    case "ground":
+      color = "#E0C068";
+      break;
+    case "flying":
+      color = "#A890F0";
+      break;
+    case "psychic":
+      color = "#F85888";
+      break;
+    case "bug":
+      color = "#A8B820";
+      break;
+    case "rock":
+      color = "#B8A038";
+      break;
+    case "ghost":
+      color = "#705898";
+      break;
+    case "dragon":
+      color = "#7038F8";
+      break;
+    case "dark":
+      color = "#705848";
+      break;
+    case "steel":
+      color = "#B8B8D0";
+      break;
+    case "fairy":
+      color = "#EE99AC";
+      break;
+    case "normal":
+      color = "#A8A878";
+      break;
+    default:
+      color = "#000";
+  }
+  return color;
+}
 
 // Função assíncrona para fazer a chamada à API de Pokémons e retornar os dados do Pokémon especificado
 const fetchPokemon = async (pokemon) => {
@@ -73,26 +134,69 @@ const renderPokemon = async (pokemon) => {
     searchPokemon = data.id;
 
     // Modal
+    const modalPokemonType = data["types"][0]["type"]["name"];
     modalPokemonName.innerHTML = data.name.toUpperCase();
-    modalPokemonNum.innerHTML = "#" + data.id;
-    modalPokemonImg.src = data["sprites"]["front_default"];
+    modalPokemonName.style.color = setModalColor(modalPokemonType);
+    modalPokemonNum.innerHTML = "<span class='textBold'>ID</span> #" + data.id;
+    modalPokemonImg.src =
+      data["sprites"]["other"]["official-artwork"]["front_default"];
     modalPokemonType.innerHTML =
       data["types"][0]["type"]["name"][0].toUpperCase() +
       data["types"][0]["type"]["name"].slice(1);
-    modalPokemonHeight.innerHTML = data["height"] / 10 + " m";
-    modalPokemonWeight.innerHTML = data["weight"] / 10 + " Kg";
-    modalPokemonAttributes.innerHTML = data["abilities"]
-      .map((ability) => `${ability["ability"]["name"]}`)
-      .join(", <br />");
-    modalPokemonTypes.innerHTML = data["types"].map(
-      (type) =>
-        `${
-          type["type"]["name"][0].toUpperCase() + type["type"]["name"].slice(1)
-        }`
-    );
-    modalPokemonStats.innerHTML = data["stats"].map(
-      (stat) => `${stat["stat"]["name"]}: ${stat["base_stat"]}`
-    );
+
+    // modal.style.color = setModalColor(modalPokemonType);
+    modal.style.color = "#505050";
+
+    modalPokemonHeight.innerHTML =
+      "<span class='textBold'>Altura</span> " + data["height"] / 10 + " m";
+    modalPokemonWeight.innerHTML = "<span class='textBold'>Peso</span> " + data["weight"] / 10 + " Kg";
+    modalPokemonAbilities.innerHTML =
+      "<span class='textBold'>Habilidades</span> " +
+      data["abilities"]
+        .map(
+          (ability) => `
+          <div class="ability" style="background-color:${setModalColor(
+            modalPokemonType
+          )}; color:
+            #fff; border-radius: 5px; padding: 8px; margin: 2.5px; display: inline-block; text-transform: uppercase; font-weight: bold; font-size: 16px;"">
+            ${ability["ability"]["name"].toUpperCase()}
+            </div>
+            
+        `
+        )
+        .join("");
+    modalPokemonTypes.innerHTML =
+      "<span class='textBold'>Tipo</span> " +
+      data["types"]
+        .map(
+          (type) =>
+            `<div class="type" style="background-color:${setModalColor(
+              type["type"]["name"]
+            )}; color:
+            #fff; border-radius: 5px; padding: 10px; margin: 5px; display: inline-block; text-transform: uppercase; font-weight: bold; font-size: 16px;"">
+            ${type["type"]["name"].toUpperCase()}
+            </div>`
+        )
+        .join(""); 
+    const modalPokemonTypesIcon = (modalPokemonStats.innerHTML = data["stats"]
+      .map(
+        (stat) =>
+          `<div class="stat">
+            <div class="stat-name">${
+              stat["stat"]["name"] === "hp"
+                ? stat["stat"]["name"].toUpperCase()
+                : stat["stat"]["name"][0].toUpperCase() +
+                  stat["stat"]["name"].slice(1)
+            } - ${stat["base_stat"]}</div>
+            <div class="progress">
+              <div class="stat-bar" style="width:${
+                stat["base_stat"] > 100 ? 100 : stat["base_stat"]
+              }%; background-color:${setModalColor(modalPokemonType)}">
+              </div>
+            </div>
+          </div>`
+      )
+      .join(""));
   } else {
     // Se o Pokémon não for encontrado, esconde a imagem do Pokémon, define o nome do Pokémon como "Not found :c" e o número do Pokémon como vazio
     pokemonImage.style.display = "none";
