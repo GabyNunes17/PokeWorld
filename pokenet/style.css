@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background: #FD0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.4);
+}
+
+.bola{
+    width: 5%;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.A{
+    width: 100%;
+    height: 15px;
+    box-shadow: 15px 0 20px rgba(0,0,0,0.4);
+}
+
+.menu{
+
+    margin-right: 1400px;
+}
+
+.main{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+div.Newpost{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 0 8px rgba(0,0,0,0.2);
+    margin: 50px 0;
+    padding: 25px;
+}
+
+div.infouser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imguser{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 0 8px rgba(0,0,0,0.2); 
+}
+
+strong{
+    font-size: 16px;
+    margin-left: 2px;
+    color: #b31919;
+    height: 40px;
+}
+
+.imagem{
+   width: 4%;
+   border-radius: 60%;
+}
+
+.botao{
+    width: 3.5%;
+    margin-right: 91%;
+    background: #FD0000;
+    border: 0;
+    cursor: pointer;
+
+}
+
+form.formpost{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+ 
+
+ textarea{
+    background: #fbfbfb;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 1px 0 4px rgba(0,0,0,0.2);
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #727272;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+ }
+
+ .urna{
+    outline: none;
+    background: #FD0000;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px 50px;
+    color: #f2f2f2;
+    
+ }
