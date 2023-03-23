@@ -173,6 +173,7 @@ button#sobre:active {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
+  overflow-y: auto;
 }
 
 .modal-header {
@@ -295,7 +296,6 @@ button#sobre:active {
   #modal {
     height: auto;
     padding: 1rem;
-    overflow-y: auto;
   }
 
   #modalPokemon {
