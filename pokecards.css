@@ -163,7 +163,6 @@
   0%, 100% {
     opacity: 0.5;
     background-position: 50% 50%;
-    filter: brightness(0.5) contrast(1);
  }
   5%, 9% {
     background-position: 100% 100%;
