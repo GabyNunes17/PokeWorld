@@ -9,7 +9,8 @@
 main{
     background: linear-gradient(104.04deg, #C0F2E9 14.79%, #F6C093 50.52%, #C4D5FA 87.02%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     width: 100%;
-    height: 900px;
+    height: 2000px;
+
 }
 
 header{
@@ -28,30 +29,35 @@ header div{
 
 header div img{
     margin: auto;
-    width: 40px;
-    height: 40px;
-    margin-left: 35%;
+    width: 42px;
+    height: 42px;
+    margin-left: 43%;
 }
 
 header div h1{
     font-family: ruslan display;
     right: 20%;
     color: #FFFFFF;
+    text-align: center;
+    margin-top: 1%;
 }
 
 header input{
     position: absolute;
     width: 20%;
     height: 35%;
-    margin-top: -3.5%;
+    margin-top: -9.4%;
     margin-left: 78%;
     border-radius: 20px;
+    padding-bottom: 1%;
+    text-align: center;
 }
 
 #pokew{
-    width: 60%;
+    width: 66%;
     height: 400px;
     margin: auto;
+    
 }
 
 #pokedex{
@@ -62,13 +68,56 @@ header input{
 
 #cards{
     width: 100%;
-    height: 500px;
-    background: rgba(57, 57, 57, 0.76);
+    height: 550px;
+    background: rgba(57, 57, 57, 0.74);
     position: absolute;
     left: -2px;
     top: 871px;
+    margin-bottom: 100px;
 }
 
+.pokes_img #esq{
+    position: absolute;
+    z-index: 1;
+    width: 287px;
+    height: 360px;
+    left: 25px;
+    bottom: -1100px;
+}
+
+.pokes_img #meio{
+    position: absolute;
+    z-index: 1;
+    left: 560px;
+    width: 240px;
+    height: 256px;
+    bottom: -1083px;
+}
+
+.pokes_img #dir{
+    position: absolute;
+    z-index: 1;
+    left: 1020px;
+    width: 250px;
+    height: 360px;
+    bottom: -1090px;
+}
+
+.fundo_sobre_nos{
+    background-color: #1A1A1A;
+    width: 100%;
+    height: 570px;
+    margin-top: 318px;
+}
+
+.ash{
+    position: absolute;
+    width: 635px;
+    height: 669px;
+    left: 610px;
+    z-index: 2;
+    bottom: -1660px;
+}
 
 
 
