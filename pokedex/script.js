@@ -28,7 +28,6 @@ const modalPokemonAbilities = document.querySelector("#modalPokemonAttributes");
 const modalPokemonStats = document.querySelector("#modalPokemonStats");
 const modalPokemonTypes = document.querySelector("#modalPokemonTypes");
 const modalPokemonNum = document.querySelector("#modalPokemonNum");
-const modalPokemonEvolution = document.querySelector("#modalPokemonEvolution");
 
 // Variável para armazenar o número do Pokémon a ser pesquisado
 let searchPokemon = 1;
@@ -79,11 +78,71 @@ const renderPokemon = async (pokemon) => {
     modalPokemonType.innerHTML =
       data["types"][0]["type"]["name"][0].toUpperCase() +
       data["types"][0]["type"]["name"].slice(1);
+
+    switch (data["types"][0]["type"]["name"]) {
+      case "fire":
+        modal.style.color = "#F08030";
+        break;
+      case "water":
+        modal.style.color = "#6890F0";
+        break;
+      case "grass":
+        modal.style.color = "#78C850";
+        break;
+      case "electric":
+        modal.style.color = "#F8D030";
+        break;
+      case "ice":
+        modal.style.color = "#98D8D8";
+        break;
+      case "fighting":
+        modal.style.color = "#C03028";
+        break;
+      case "poison":
+        modal.style.color = "#A040A0";
+        break;
+      case "ground":
+        modal.style.color = "#E0C068";
+        break;
+      case "flying":
+        modal.style.color = "#A890F0";
+        break;
+      case "psychic":
+        modal.style.color = "#F85888";
+        break;
+      case "bug":
+        modal.style.color = "#A8B820";
+        break;
+      case "rock":
+        modal.style.color = "#B8A038";
+        break;
+      case "ghost":
+        modal.style.color = "#705898";
+        break;
+      case "dragon":
+        modal.style.color = "#7038F8";
+        break;
+      case "dark":
+        modal.style.color = "#705848";
+        break;
+      case "steel":
+        modal.style.color = "#B8B8D0";
+        break;
+      case "fairy":
+        modal.style.color = "#EE99AC";
+        break;
+      case "normal":
+        modal.style.color = "#A8A878";
+        break;
+      default:
+        modal.style.color = "#000";
+    }
+
     modalPokemonHeight.innerHTML = data["height"] / 10 + " m";
     modalPokemonWeight.innerHTML = data["weight"] / 10 + " Kg";
     modalPokemonAttributes.innerHTML = data["abilities"]
       .map((ability) => `${ability["ability"]["name"]}`)
-      .join(", <br />");
+      .join("<br />");
     modalPokemonTypes.innerHTML = data["types"].map(
       (type) =>
         `${
@@ -91,7 +150,14 @@ const renderPokemon = async (pokemon) => {
         }`
     );
     modalPokemonStats.innerHTML = data["stats"].map(
-      (stat) => `${stat["stat"]["name"]}: ${stat["base_stat"]}`
+      (stat) =>
+        `<div class="stat">
+          <div class="stat-name">${stat["stat"]["name"]}</div>
+          <div class="stat-bar">
+            <div class="stat-bar-fill" style="width: ${stat["base_stat"]}%"></div>
+          </div>
+          <div class="stat-value">${stat["base_stat"]}</div>
+        </div>`
     );
   } else {
     // Se o Pokémon não for encontrado, esconde a imagem do Pokémon, define o nome do Pokémon como "Not found :c" e o número do Pokémon como vazio
@@ -133,3 +199,5 @@ const toggleModal = () => {
 [openModalButton, closeModalButton, fade].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
+
+console.log(modalPokemonType);

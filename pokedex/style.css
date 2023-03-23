@@ -203,8 +203,32 @@ button#sobre:active {
   cursor: pointer;
   background-color: #dc0a2d;
   border: none;
+  border-radius: 0.3rem;
+  transition: 0.3s;
 }
 
 #close-modal i {
   color: #fff;
+}
+
+#close-modal:hover {
+  background-color: #ccc;
+}
+
+#modalPokemon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+#infos {
+  perspective: 400px;
+  margin: auto 0;
+}
+
+#pokemon img {
+  height: auto;
+
 }
