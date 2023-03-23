@@ -109,3 +109,31 @@ header{
     height: 550px;
     transform: translate(-60%,-30%);
   }
+
+#logo{
+    width: 50%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #C0F2E9;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin: auto; 
+}
+
+#logo h1{
+    color: #fff;
+    margin: auto;
+}
+
+header input{
+    width: 30%;
+    height: 500px;
+    margin-left: 80%;
+    border-radius: 20px;  
+}
+
