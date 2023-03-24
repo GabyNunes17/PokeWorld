@@ -27,6 +27,9 @@ const modalPokemonAbilities = document.querySelector("#modalPokemonAttributes");
 const modalPokemonStats = document.querySelector("#modalPokemonStats");
 const modalPokemonTypes = document.querySelector("#modalPokemonTypes");
 const modalPokemonNum = document.querySelector("#modalPokemonNum");
+const evolutions = document.querySelector("#evolutions");
+const evolutionList = document.querySelector("#evolutionList");
+const tituloEvolucoes = document.querySelector("#evolutions h3 span");
 
 // Variável para armazenar o número do Pokémon a ser pesquisado
 let searchPokemon = 1;
@@ -108,6 +111,19 @@ const fetchPokemon = async (pokemon) => {
   }
 };
 
+const fetchEvolutionChain = async (speciesUrl) => {
+  const speciesResponse = await fetch(speciesUrl);
+  if (speciesResponse.status === 200) {
+    const speciesData = await speciesResponse.json();
+    const evolutionChainUrl = speciesData.evolution_chain.url;
+    const evolutionChainResponse = await fetch(evolutionChainUrl);
+    if (evolutionChainResponse.status === 200) {
+      const evolutionChainData = await evolutionChainResponse.json();
+      return evolutionChainData.chain;
+    }
+  }
+};
+
 // Função assíncrona para renderizar as informações do Pokémon no HTML
 const renderPokemon = async (pokemon) => {
   // Define o nome do Pokémon como "Carregando..." e o número do Pokémon como vazio enquanto a API estiver sendo chamada
@@ -149,7 +165,8 @@ const renderPokemon = async (pokemon) => {
 
     modalPokemonHeight.innerHTML =
       "<span class='textBold'>Altura</span> " + data["height"] / 10 + " m";
-    modalPokemonWeight.innerHTML = "<span class='textBold'>Peso</span> " + data["weight"] / 10 + " Kg";
+    modalPokemonWeight.innerHTML =
+      "<span class='textBold'>Peso</span> " + data["weight"] / 10 + " Kg";
     modalPokemonAbilities.innerHTML =
       "<span class='textBold'>Habilidades</span> " +
       data["abilities"]
@@ -177,7 +194,7 @@ const renderPokemon = async (pokemon) => {
             ${type["type"]["name"].toUpperCase()}
             </div>`
         )
-        .join(""); 
+        .join("");
     const modalPokemonTypesIcon = (modalPokemonStats.innerHTML = data["stats"]
       .map(
         (stat) =>
@@ -197,6 +214,37 @@ const renderPokemon = async (pokemon) => {
           </div>`
       )
       .join(""));
+
+    // Evolução
+
+    const evolutionChain = await fetchEvolutionChain(data["species"]["url"]);
+
+    // Comece a partir do primeiro estágio de evolução na cadeia
+    let currentEvolution = evolutionChain;
+
+    evolutionList.innerHTML = "";
+
+    // Percorra a cadeia de evolução enquanto houver um próximo estágio
+    while (currentEvolution) {
+      const id = currentEvolution.species.url.split("/")[6];
+      const name = currentEvolution.species.name;
+      const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+
+      const evolutionHtml = `<div class="evolution">
+        <img src="${imageUrl}" alt="${name}" class="evolution-img" />
+        <div class="evolution-number">#${id}</div>
+        <div class="evolution-name">
+        ${name.toUpperCase()}
+        </div>
+      </div>`;
+
+      tituloEvolucoes.style.backgroundColor = setModalColor(modalPokemonType);
+
+      evolutionList.innerHTML += evolutionHtml;
+
+      // Atualize o próximo estágio de evolução
+      currentEvolution = currentEvolution.evolves_to[0];
+    }
   } else {
     // Se o Pokémon não for encontrado, esconde a imagem do Pokémon, define o nome do Pokémon como "Not found :c" e o número do Pokémon como vazio
     pokemonImage.style.display = "none";
