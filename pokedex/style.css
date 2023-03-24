@@ -351,6 +351,10 @@ button#sobre:active {
 }
 
 @media (max-width: 768px) {
+  * {
+    font-family: sans-serif;
+  }
+  
   #modal {
     height: auto;
     padding: 1rem;
