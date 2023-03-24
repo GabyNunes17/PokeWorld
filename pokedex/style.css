@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: cursive;
+  font-family: cursive, sans-serif;
 }
 
 /* Definições do corpo da página */
@@ -351,6 +351,10 @@ button#sobre:active {
 }
 
 @media (max-width: 768px) {
+  * {
+    font-family: sans-serif;
+  }
+  
   #modal {
     height: auto;
     padding: 1rem;
