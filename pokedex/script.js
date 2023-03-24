@@ -29,6 +29,7 @@ const modalPokemonTypes = document.querySelector("#modalPokemonTypes");
 const modalPokemonNum = document.querySelector("#modalPokemonNum");
 const evolutions = document.querySelector("#evolutions");
 const evolutionList = document.querySelector("#evolutionList");
+const tituloEvolucoes = document.querySelector("#evolutions h3 span");
 
 // Variável para armazenar o número do Pokémon a ser pesquisado
 let searchPokemon = 1;
@@ -227,12 +228,17 @@ const renderPokemon = async (pokemon) => {
     while (currentEvolution) {
       const id = currentEvolution.species.url.split("/")[6];
       const name = currentEvolution.species.name;
-      const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
+      const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
 
       const evolutionHtml = `<div class="evolution">
-        <div class="evolution-name">${name}</div>
         <img src="${imageUrl}" alt="${name}" class="evolution-img" />
+        <div class="evolution-number">#${id}</div>
+        <div class="evolution-name">
+        ${name.toUpperCase()}
+        </div>
       </div>`;
+
+      tituloEvolucoes.style.backgroundColor = setModalColor(modalPokemonType);
 
       evolutionList.innerHTML += evolutionHtml;
 

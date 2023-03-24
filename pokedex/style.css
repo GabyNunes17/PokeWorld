@@ -176,6 +176,20 @@ button#sobre:active {
   overflow-y: auto;
 }
 
+#modal::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+#modal::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+  background-color: #ccc;
+}
+
+#modal::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #888;
+}
+
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -292,6 +306,50 @@ button#sobre:active {
   font-size: 1.3rem;
 }
 
+#evolutions ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+#evolutions h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+#evolutions h3 span {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.evolution-name {
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.evolution-img {
+  width: 100%;
+}
+
+.evolution {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   #modal {
     height: auto;
@@ -316,5 +374,14 @@ button#sobre:active {
 
   #static {
     width: 100%;
+  }
+
+  #evolutions ul {
+    flex-direction: column;
+  }
+
+  .evolution-img {
+    width: 80px;
+    height: 80px;
   }
 }
