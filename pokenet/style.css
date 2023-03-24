@@ -127,3 +127,80 @@ form.formpost{
     color: #f2f2f2;
     
  }
+
+ ul.posts li.post{
+    margin-bottom: 50px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    box-shadow: 1px 0 8px rgba(0,0,0,0.2);
+
+ }
+ 
+
+ .imguserpost{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 0 4px rgba(0,0,0,0.2); 
+ }
+
+
+ .metapo{
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 1px 0 8px rgba(0,0,0,0.2);
+    margin-top: 20px;
+ }
+
+ div.nameandhour{
+     font-size: 12px;
+ }
+
+ li.post >p{
+    width: 100%;
+    margin: 20px 0;
+    font-weight: bold;
+ }
+
+ div.actionbtnpost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .postagem{
+    padding: 20px 5px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    border: 0;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: black;
+    transition: background 0.2s;
+ }
+ 
+ .postagemdois{
+    background-color: rgb(237, 237, 75);
+    padding: 20px 5px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+   
+ }
