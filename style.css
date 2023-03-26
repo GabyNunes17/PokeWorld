@@ -8,14 +8,14 @@
 
 main{
     width: 100%;
-    height: 2000px;
+    height: 2500px;
     background: linear-gradient(104.04deg, #C0F2E9 14.79%, #F6C093 50.52%, #C4D5FA 87.02%), #FFFFFF;
     z-index: -1;
 }
 
 header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: #DC0A2D;
 }
  
@@ -50,6 +50,7 @@ header{
 .nav {
     transition: 0.3s ease;
     display: none;
+    font-family: pokefont;
   }
 
 .nav ul {
@@ -120,12 +121,17 @@ header{
     flex-direction: column;
     margin: auto;
     float: left;
+    font-family: pokefont;
+    font-size: 20px;
 }
 
 #logo img{
     width: 50px;
     height: 50px;
     margin: auto; 
+    padding-bottom: 9px;
+    padding-top: 10px;
+    
 }
 
 #logo h1{
@@ -171,7 +177,8 @@ header input{
 
 #PokeBig{
     width: 100%;
-    height: 400px;
+    height: 65%;
+    margin-bottom: -60px;
 }
 
 #pokes_img{
@@ -208,6 +215,10 @@ header input{
     font-family: pokefont;
     font-weight: 400;
     line-height: 32px;
+    display: flex;
+    flex-direction: column;
+    clear: left;
+      
     }
     .fundo_sobre_nos h1{
       font-size: 60px;
@@ -218,16 +229,32 @@ header input{
     .fundo_sobre_nos p{
       margin-left: 110px;
       font-size: 30px;
-      flex-direction: row;
-      display: flex;
+      float: left;
+      clear: left;
     }
 
 .ash{
+    width: auto;
+    margin: auto;
     display: flex;
-    margin-left: 850px;
-    width: 550px;
-    height: 580px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -213px;
+    padding-bottom: 40px ;
+    clear: right;
 }
 
+#log{
+  font-size: 17px;
+  width: 1%;
+}
 
+.red{
+  background-color: #DB0000DE;
+  width: 100%;
+  height: 44px;
+  z-index: 3;
+  position: absolute;
+  margin-top: 93%;
+}
 
