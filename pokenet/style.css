@@ -101,7 +101,7 @@ header{
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: radial-gradient(circle, #DC0A2D, #DC0A2D);
+    background: radial-gradient(circle, #FD0000, #FD0000);
     border-radius: 50%;
     transition: 0.3s ease;
   }
