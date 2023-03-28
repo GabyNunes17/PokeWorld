@@ -6,23 +6,19 @@ export class FormPost{
       this.addSubmit();
  
     }
-
-
+   
     onSubmit(func){
-        this.form.addEventListener(`submit`,func)
+       this.Form.addEventListener('submit',func)
     }
-
-
-  addSubmit(){
+   addSubmit(){
     const handleSubmit = (event) => {
        event.preventDefault();
-       console.log(`Evento add.`)
+       console.log('Evento add.')
 
     }
     this.onSubmit(handleSubmit)
       
  }
   
-
 }
-const postform = new FormPost(`formpost`,`textarea`,`posts`)
+const postform = new FormPost('formpost','textarea','posts')
