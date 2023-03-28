@@ -43,19 +43,16 @@
         <div class="infouser"> </div>
         <img class="imguser" src="../assets/user.jpg" >
         <Strong>Login ou registre-se</Strong>
-
-
-
-        <form action="" class="formpost">
-          <textarea name="textarea" placeholder="começe sua jornada aqui!!" id="" cols="113" rows="4"></textarea>
+        <form id="formulario">
+          <textarea type="text" required id="comentario" name="textarea" placeholder="Começe sua jornada aqui!!" cols="113" rows="4"></textarea>
           <div class="iconsandbutton">
-          <div class="icons">
-            <a class="btnfileform" href="#"><img class="imagem" src="../assets/camerapoke.png" alt=""></a>
+            <div class="icons">
+              <a class="btnfileform" href="#"><img class="imagem" src="../assets/camerapoke.png" alt=""></a>
+            </div>
           </div>
-      
-          <button class="urna" type="submit" class="btnsubmitform">Publicar</button>
-        </div>
-    </div>  
+          <button  class="urna" type="submit" class="btnsubmitform" onclick="mostrarComentario()">Publicar</button>
+        </form>
+    </div>    
 </form>
 
 <ul class="posts">
