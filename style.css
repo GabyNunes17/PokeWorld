@@ -314,7 +314,7 @@ footer .copy{
  padding-bottom: 30px;
 }
 
-.cntt ul li a{
+.cntt ul a{
   color: #fff;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -327,6 +327,17 @@ footer .copy{
   margin-top: -110px;
   margin-left: 60px;
   width: 11%;
+}
+
+.cntt h2{
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: #0000FF solid;
+  margin-top: -90px;
+  margin-bottom: 90px;
+  margin-left: 1210px;
+  width: 11%;
+  font-size: 24px;
 }
 
 .social{
@@ -344,18 +355,18 @@ footer .copy{
   transform: scale(1.5);
 }
 
-li {
+.cntt li {
   display: inline-block;
   position: relative;
   transition: 0.4s all ease;
 }
 
-li:hover{
+.cntt li:hover{
   color: #cdcdcd;
   transition: 0.4s all ease;
 }
 
-li::after{
+.cntt li::after{
   content: '';
   position: absolute;
   width: 100%;
