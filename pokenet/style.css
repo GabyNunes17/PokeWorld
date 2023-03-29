@@ -294,6 +294,7 @@ div.actionbtnpost {
   border-radius: 10px;
   border-left: 10px solid #fff;
   transition: 0.5s;
+  position: fixed;
 }
 
 .navigation:hover {
