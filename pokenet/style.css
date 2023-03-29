@@ -327,7 +327,7 @@ div.actionbtnpost {
   position: relative;
   display: block;
   min-width: 80px;
-  height: 100px;
+  height: 80px;
   text-align: center;
   line-height: 70px;
 }
@@ -335,5 +335,9 @@ div.actionbtnpost {
 .img1{
   width: 30px;
   height: 30px;
-  margin-bottom: 30%;
+}
+
+i{
+  font-size: 30px;
+  margin-top: -50px;
 }
