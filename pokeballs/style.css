@@ -5,7 +5,7 @@
 }
 main{
     width: 100%;
-    height: 800px;
+    height: 2800px;
     background: linear-gradient(104.04deg, #C0F2E9 14.79%, #F6C093 50.52%, #C4D5FA 87.02%), #FFFFFF;
     z-index: -1;
 }
@@ -153,6 +153,16 @@ header input{
  font-size: 50px;
 }
 
+.pkballs{
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+}
+
 #pokeNomal{
   width: 100%;
   height: 500px;
@@ -195,42 +205,167 @@ header input{
   border-radius: 5px;
 }
 
-.pkb1{
-  width: 80%;
-  height: 80px;
-  margin: auto;
-  margin-top: 20px;
+#t1{
+  position: absolute;
+  width: 55%;
+  padding-left: 3%;
   display: flex;
-  padding-bottom: 20px;
-  border-bottom: 2px solid;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -4%;
 }
 
-.pkb2{
-  width: 80%;
-  height: 80px;
-  margin: auto;
-  margin-top: 20px;
-  display: flex;
-  padding-bottom: 20px;
-  border-bottom: 2px solid;
+#t1 h1{
+  font-size: 50px;
+  padding: 100px 0;
+} 
+
+
+#pokeFrutas{
+  width: 100%;
+  height: 1000px;
+  padding: 20px 0;
+  margin-top: 11%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.pkb3{
-  width: 80%;
-  height: 80px;
-  margin: auto;
-  margin-top: 20px;
+#s1{
   display: flex;
-  padding-bottom: 20px;
-  border-bottom: 2px solid;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.pkb4{
-  width: 80%;
-  height: 80px;
-  margin: auto;
-  margin-top: 20px;
+#s2{
+  padding-top: 4%;
   display: flex;
-  padding-bottom: 20px;
-  border-bottom: 2px solid;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#pk5{
+  width: 20%;
+  height: 460px;
+  background: #7B9B38;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk6{
+  width: 20%;
+  height: 460px;
+  background: #78ADB9;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk7{
+  width: 20%;
+  height: 460px;
+  background: #7FDA77;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk8{
+  width: 20%;
+  height: 460px;
+  background: #2B418F;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk9{
+  width: 20%;
+  height: 460px;
+  background: #CE57AD;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk10{
+  width: 20%;
+  height: 460px;
+  background: #92DCD8;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk11{
+  width: 20%;
+  height: 460px;
+  background: #CCCD83;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk12{
+  width: 20%;
+  height: 460px;
+  background: #34A57C;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#t2{
+  position: absolute;
+  width: 55%;
+  padding-left: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -5%;
+  
+}
+
+#t2 h1{
+  font-size: 50px;
+  padding: 130px 0;
+} 
+
+#t2 img{
+  width: 250px;
+  height: 250px;
+} 
+
+#pokeDevon{
+  width: 100%;
+  height: 500px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 11%;
+}
+
+#pk13{
+  width: 20%;
+  height: 460px;
+  background: #A73D3D;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk14{
+  width: 20%;
+  height: 460px;
+  background: #CCCD83;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk15{
+  width: 20%;
+  height: 460px;
+  background: #34A57C;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#pk16{
+  width: 20%;
+  height: 460px;
+  background: #548894;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
