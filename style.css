@@ -6,16 +6,25 @@
     margin: 0;
 }
 
+@font-face{
+  font-family: pokefont;
+  src: url(Fonts/RuslanDisplay-Regular.ttf);
+}
+
+.formatar{
+font-family: pokefont;
+}
+
 main{
     width: 100%;
-    height: auto;
+    height: 2200px;
     background: linear-gradient(104.04deg, #C0F2E9 14.79%, #F6C093 50.52%, #C4D5FA 87.02%), #FFFFFF;
     z-index: -1;
 }
 
 header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: #DC0A2D;
 }
  
@@ -50,6 +59,7 @@ header{
 .nav {
     transition: 0.3s ease;
     display: none;
+    font-family: pokefont;
   }
 
 .nav ul {
@@ -120,12 +130,17 @@ header{
     flex-direction: column;
     margin: auto;
     float: left;
+    font-family: pokefont;
+    font-size: 20px;
 }
 
 #logo img{
     width: 50px;
     height: 50px;
     margin: auto; 
+    padding-bottom: 9px;
+    padding-top: 10px;
+    
 }
 
 #logo h1{
@@ -134,20 +149,31 @@ header{
 }
 
 header input{
-    width: 100%;
+    width: 90%;
     height: 30px;
     margin-left: 80%;
     margin: auto;
     border-radius: 20px;
+    padding-left: 20px;
+}
+
+header input:focus{
+  border: none;
+  box-shadow: 0;
+  text-decoration: none;
+  outline: none;
 }
 
 #txt{
-  position: absolute;
-  padding: 28px 0;
   width: 20%;
-  height: 20px;
+  height: 30px;
   margin-left: 78%;
   float: left;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: -45px;
 }
 
 #centro{
@@ -164,64 +190,196 @@ header input{
     height: 270px;
 }
 
+#pokeDex:hover{
+    width: 100%;
+    height: 300px;
+}
+
 #PokeBig{
     width: 100%;
-    height: 400px;
+    height: 65%;
+    margin-bottom: -60px;
+}
+
+#pokes_img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 26.7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
 }
 
 #cards{
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 520px;
-    background: rgba(0, 0, 0, 0.74);
+    background-image: url(/assets/IMG-20230325-WA0000.jpg);
     padding-top: 1%;
     display: flex;  
     flex-direction: row;
+    z-index: 1;
     justify-content: space-around;
 }
 
-.pokes_img #esq{
-    position: absolute;
-    z-index: 1;
-    width: 287px;
-    height: 360px;
-    left: 25px;
-    bottom: -1100px;
-}
-
-.pokes_img #meio{
-    position: absolute;
-    z-index: 1;
-    left: 560px;
-    width: 240px;
-    height: 256px;
-    bottom: -1083px;
-}
-
-.pokes_img #dir{
-    position: absolute;
-    z-index: 1;
-    left: 1020px;
-    width: 250px;
-    height: 360px;
-    bottom: -1090px;
-}
-
 .fundo_sobre_nos{
+    position: absolute;
     background-color: #1A1A1A;
     width: 100%;
     height: 570px;
-    margin-top: 318px;
-}
+    z-index: 1;
+    margin-top: 50%;
+    color: #FFFFFF;
+    font-family: pokefont;
+    font-weight: 400;
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+    clear: left;
+      
+    }
+    .fundo_sobre_nos h1{
+      font-size: 60px;
+      margin-left: 130px;
+      display: flex;
+    }
+
+    .fundo_sobre_nos p{
+      margin-left: 110px;
+      font-size: 30px;
+      float: left;
+      clear: left;
+    }
 
 .ash{
-    position: absolute;
-    width: 635px;
-    height: 669px;
-    left: 610px;
-    z-index: 2;
-    bottom: -1660px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -213px;
+    padding-bottom: 40px ;
+    clear: right;
 }
 
+#log{
+  font-size: 17px;
+  width: 1%;
+}
 
+.red{
+  background-color: #DB0000DE;
+  width: 100%;
+  height: 44px;
+  z-index: 3;
+  position: absolute;
 
+}
+
+footer{
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  z-index: 300;
+  position: absolute;
+}
+
+footer img{
+  margin: auto;
+  position: relative;
+  z-index: 4;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -55px;
+  padding-bottom: 30px;
+}
+
+footer .copy{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+}
+
+.cntt ul{
+  display: flex;
+ justify-content: space-around;
+ width: 30%;
+ margin-left: 60px;
+ padding-bottom: 30px;
+}
+
+.cntt ul a{
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cntt h1{
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: #0000FF solid;
+  margin-top: -110px;
+  margin-left: 60px;
+  width: 11%;
+}
+
+.cntt h2{
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: #0000FF solid;
+  margin-top: -90px;
+  margin-bottom: 90px;
+  margin-left: 1210px;
+  width: 11%;
+  font-size: 24px;
+}
+
+.social{
+  display: flex;
+  width: 15%;
+  float: right;
+  margin-right: 80px;
+}
+
+.social a{
+  margin-right: 20px;
+}
+
+.social a:hover{
+  transform: scale(1.5);
+}
+
+.cntt li {
+  display: inline-block;
+  position: relative;
+  transition: 0.4s all ease;
+}
+
+.cntt li:hover{
+  color: #cdcdcd;
+  transition: 0.4s all ease;
+}
+
+.cntt li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #0051ff ;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+li:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
