@@ -306,14 +306,13 @@ div.actionbtnpost {
   top: 0;
   left: 0;
   width: 100%;
-  padding-left: 5px;
-  padding-top: 40px;
 }
 
 .navigation ul li {
   position: relative;
   list-style: none;
   width: 100%;
+  padding-top: 10px;
 }
 
 .navigation ul li a {
