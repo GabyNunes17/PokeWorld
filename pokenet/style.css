@@ -238,7 +238,6 @@ form.formpost{
 
  .metapo{
     width: 100%;
-    border-radius: 10%;
     box-shadow: 1px 0 8px rgba(0,0,0,0.2);
     margin-top: 20px;
  }
@@ -293,3 +292,54 @@ form.formpost{
     cursor: pointer;
    
  }
+
+ .navigation{
+    position: relative;
+    height: 500px;
+    background: #FD0000;
+    width: 70px;
+    box-shadow: 3px 0 0;
+    border-radius: 10px;
+    border-left: 10px solid #fff;
+    transition: 0.5s;
+    
+ }
+
+ .navigation:hover{
+  width: 200px;
+ }
+
+  .navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+    
+  }
+
+  .navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+  }
+
+  .navigation ul li a{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #f2f2f2;
+  }
+  
+  .navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 80px;
+    height: 100px;
+    text-align: center;
+    line-height: 70px;
+  }
+  
+  
