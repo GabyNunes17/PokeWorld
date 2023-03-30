@@ -1,170 +1,171 @@
 @import url(pokecards.css);
 
-*{
-    border: 0;
-    padding: 0;
-    margin: 0;
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
-@font-face{
+@font-face {
   font-family: pokefont;
   src: url(Fonts/RuslanDisplay-Regular.ttf);
 }
 
-.formatar{
-font-family: pokefont;
+.formatar {
+  font-family: pokefont;
 }
 
-main{
-    width: 100%;
-    height: 2200px;
-    background: linear-gradient(104.04deg, #C0F2E9 14.79%, #F6C093 50.52%, #C4D5FA 87.02%), #FFFFFF;
-    z-index: -1;
+main {
+  width: 100%;
+  height: 2200px;
+  background: linear-gradient(104.04deg, #C0F2E9 14.79%, #F6C093 50.52%, #C4D5FA 87.02%), #FFFFFF;
+  z-index: -1;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    background-color: #DC0A2D;
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #DC0A2D;
 }
- 
+
 #menu {
-    z-index: 2;
-  }
+  z-index: 2;
+}
 
 #menu-bar {
-    width: 45px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-  }
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
 
 .bar {
-    height: 5px;
-    width: 100%;
-    background-color: #000;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-  }
+  height: 5px;
+  width: 100%;
+  background-color: #000;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
 
 #bar1 {
-    transform: translateY(-4px);
-  }
+  transform: translateY(-4px);
+}
 
 #bar3 {
-    transform: translateY(4px);
-  }
+  transform: translateY(4px);
+}
 
 .nav {
-    transition: 0.3s ease;
-    display: none;
-    font-family: pokefont;
-  }
+  transition: 0.3s ease;
+  display: none;
+  font-family: pokefont;
+}
 
 .nav ul {
-    padding: 0 22px;
-  }
+  padding: 0 22px;
+}
 
 .nav li {
-    list-style: none;
-    padding: 12px 0;
-  }
+  list-style: none;
+  padding: 12px 0;
+}
 
 .nav li a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-  }
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
 
 .nav li a:hover {
-    font-weight: bold;
-  }
+  font-weight: bold;
+}
 
-.menu-bg, #menu {
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
+.menu-bg,
+#menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
 
 .menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background: radial-gradient(circle, #DC0A2D, #DC0A2D);
-    border-radius: 50%;
-    transition: 0.3s ease;
-  }
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #DC0A2D, #DC0A2D);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
 
 .change {
-    display: block;
-  }
+  display: block;
+}
 
 .change .bar {
-    background-color: white;
-  }
+  background-color: white;
+}
 
 .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-  }
+  transform: translateY(4px) rotateZ(-45deg);
+}
 
 .change #bar2 {
-    opacity: 0;
-  }
+  opacity: 0;
+}
 
 .change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
-  }
+  transform: translateY(-6px) rotateZ(45deg);
+}
 
 .change-bg {
-    width: 520px;
-    height: 550px;
-    transform: translate(-60%,-30%);
-  }
-
-#logo{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    float: left;
-    font-family: pokefont;
-    font-size: 20px;
+  width: 520px;
+  height: 550px;
+  transform: translate(-60%, -30%);
 }
 
-#logo img{
-    width: 50px;
-    height: 50px;
-    margin: auto; 
-    padding-bottom: 9px;
-    padding-top: 10px;
-    
+#logo {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  float: left;
+  font-family: pokefont;
+  font-size: 20px;
 }
 
-#logo h1{
-    color: #fff;
-    margin: auto;
+#logo img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  padding-bottom: 9px;
+  padding-top: 10px;
+
 }
 
-header input{
-    width: 90%;
-    height: 30px;
-    margin-left: 80%;
-    margin: auto;
-    border-radius: 20px;
-    padding-left: 20px;
+#logo h1 {
+  color: #fff;
+  margin: auto;
 }
 
-header input:focus{
+header input {
+  width: 90%;
+  height: 30px;
+  margin-left: 80%;
+  margin: auto;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+header input:focus {
   border: none;
   box-shadow: 0;
   text-decoration: none;
   outline: none;
 }
 
-#txt{
+#txt {
   width: 20%;
   height: 30px;
   margin-left: 78%;
@@ -176,100 +177,101 @@ header input:focus{
   margin-top: -45px;
 }
 
-#centro{
-    width: 65%;
-    height: 700px;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    align-items: center;
+#centro {
+  width: 65%;
+  height: 700px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
 }
 
-#pokeDex{
-    width: 100%;
-    height: 270px;
+#pokeDex {
+  width: 100%;
+  height: 270px;
 }
 
-#pokeDex:hover{
-    width: 100%;
-    height: 300px;
+#pokeDex:hover {
+  width: 100%;
+  height: 300px;
 }
 
-#PokeBig{
-    width: 100%;
-    height: 65%;
-    margin-bottom: -60px;
+#PokeBig {
+  width: 100%;
+  height: auto;
+  margin-bottom: -60px;
 }
 
-#pokes_img{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    margin-top: 26.7%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 2;
+#pokes_img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 26.7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 2;
 }
 
-#cards{
-    position: absolute;
-    width: 100%;
-    height: 520px;
-    background-image: url(/assets/IMG-20230325-WA0000.jpg);
-    padding-top: 1%;
-    display: flex;  
-    flex-direction: row;
-    z-index: 1;
-    justify-content: space-around;
+#cards {
+  position: absolute;
+  width: 100%;
+  height: 520px;
+  background-image: url(/assets/IMG-20230325-WA0000.jpg);
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  justify-content: space-around;
 }
 
-.fundo_sobre_nos{
-    position: absolute;
-    background-color: #1A1A1A;
-    width: 100%;
-    height: 570px;
-    z-index: 1;
-    margin-top: 50%;
-    color: #FFFFFF;
-    font-family: pokefont;
-    font-weight: 400;
-    line-height: 32px;
-    display: flex;
-    flex-direction: column;
-    clear: left;
-      
-    }
-    .fundo_sobre_nos h1{
-      font-size: 60px;
-      margin-left: 130px;
-      display: flex;
-    }
+.fundo_sobre_nos {
+  position: absolute;
+  background-color: #1A1A1A;
+  width: 100%;
+  height: 570px;
+  z-index: 1;
+  margin-top: 50%;
+  color: #FFFFFF;
+  font-family: pokefont;
+  font-weight: 400;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  clear: left;
 
-    .fundo_sobre_nos p{
-      margin-left: 110px;
-      font-size: 30px;
-      float: left;
-      clear: left;
-    }
-
-.ash{
-    width: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: -213px;
-    padding-bottom: 40px ;
-    clear: right;
 }
 
-#log{
+.fundo_sobre_nos h1 {
+  font-size: 60px;
+  margin-left: 130px;
+  display: flex;
+}
+
+.fundo_sobre_nos p {
+  margin-left: 110px;
+  font-size: 30px;
+  float: left;
+  clear: left;
+}
+
+.ash {
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -213px;
+  padding-bottom: 40px;
+  clear: right;
+}
+
+#log {
   font-size: 17px;
   width: 1%;
 }
 
-.red{
+.red {
   background-color: #DB0000DE;
   width: 100%;
   height: 44px;
@@ -278,7 +280,7 @@ header input:focus{
 
 }
 
-footer{
+footer {
   background-color: #000;
   width: 100%;
   height: auto;
@@ -286,7 +288,7 @@ footer{
   position: absolute;
 }
 
-footer img{
+footer img {
   margin: auto;
   position: relative;
   z-index: 4;
@@ -297,7 +299,7 @@ footer img{
   padding-bottom: 30px;
 }
 
-footer .copy{
+footer .copy {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -306,21 +308,21 @@ footer .copy{
   text-align: center;
 }
 
-.cntt ul{
+.cntt ul {
   display: flex;
- justify-content: space-around;
- width: 30%;
- margin-left: 60px;
- padding-bottom: 30px;
+  justify-content: space-around;
+  width: 30%;
+  margin-left: 60px;
+  padding-bottom: 30px;
 }
 
-.cntt ul a{
+.cntt ul a {
   color: #fff;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.cntt h1{
+.cntt h1 {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: #0000FF solid;
@@ -329,7 +331,7 @@ footer .copy{
   width: 11%;
 }
 
-.cntt h2{
+.cntt h2 {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: #0000FF solid;
@@ -340,18 +342,18 @@ footer .copy{
   font-size: 24px;
 }
 
-.social{
+.social {
   display: flex;
   width: 15%;
   float: right;
   margin-right: 80px;
 }
 
-.social a{
+.social a {
   margin-right: 20px;
 }
 
-.social a:hover{
+.social a:hover {
   transform: scale(1.5);
 }
 
@@ -361,12 +363,13 @@ footer .copy{
   transition: 0.4s all ease;
 }
 
-.cntt li:hover{
+
+.cntt li:hover {
   color: #cdcdcd;
   transition: 0.4s all ease;
 }
 
-.cntt li::after{
+.cntt li::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -374,12 +377,135 @@ footer .copy{
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #0051ff ;
+  background-color: #0051ff;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
 
-li:hover::after{
+li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+@media only screen and (max-width:480px) {
+  /*inicio mobile*/
+
+  main {
+    height: 2100px;
+    width: 100%;
+  }
+
+  #txt {
+    display: none;
+  }
+
+  #cards {
+    display: none;
+  }
+
+  #pokeDex {
+    height: auto;
+    padding-top: 40px;
+  }
+
+  #pokeDex:hover {
+    transform: scale(0.75);
+  }
+
+  .texto h1 {
+    font-size: 41px;
+    text-align: center;
+    margin-left: 110px;
+  }
+
+  .texto p {
+    font-size: 21px;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: -30px;
+  }
+
+  #pokes_img {
+    width: 35%;
+    height: 35%;
+    margin-top: 70px;
+    padding-left: 20px;
+    margin-left: -37px;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  #esq {
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20px;
+  }
+
+  #dir {
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20px;
+  }
+
+  #meio {
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20px;
+  }
+
+  .ash {
+    margin-left: 0px;
+    width: 100%;
+    height: auto;
+    top: 200px;
+  }
+
+  footer {
+    margin-top: -350px;
+    padding-bottom: 25px;
+  }
+
+  #centro {
+    width: auto;
+    height: 450px;
+  }
+
+  footer h2 {
+    display: none;
+  }
+
+  footer h1 {
+    display: none;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-right: 190px;
+  }
+
+  .cntt ul li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .cntt {
+    margin-bottom: 70px;
+    justify-content: center;
+    display: flex;
+    margin-left: -75px;
+  }
+
+  .cntt a {
+    margin-left: 20px;
+  }
+
+  .copy {
+    margin-bottom: -250px;
+  }
+
+}
+
+/*fim mobile*/
