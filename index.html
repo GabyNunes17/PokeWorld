@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PokeWorld</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="pokecards/pokecards.css" />
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-  </head>
-  <body>
-    <script src="/pokecards/pokecards.js"></script>
-    <main class="app">
-      <header>
-        <div id="menu">
-          <div id="menu-bar" onclick="menuOnClick()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
-          </div>
-          <nav class="nav" id="nav">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="pokedex/">Pokédex</a></li>
-              <li><a href="pokeballs/">Pokeballs</a></li>
-              <li><a href="pokenet/">Pokenet</a></li>
-              <li><a href="Login/">Login</a></li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokeWorld</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pokecards/pokecards.css" />
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <script src="/pokecards/pokecards.js"></script>
+  <main class="app">
+    <header>
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
         </div>
-        <div class="menu-bg" id="menu-bg"></div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="pokedex/">Pokédex</a></li>
+            <li><a href="pokeballs/">Pokeballs</a></li>
+            <li><a href="pokenet/">Pokenet</a></li>
+            <li><a href="Login/">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
 
-        <section id="logo">
-          <img src="assets/pokeLogo.png" alt="Logo" />
-          <h1>POKEWORLD</h1>
-        </section>
-        <div id="txt">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="text" placeholder="Pesquisar" />
-        </div>
-      </header>
-      <section id="centro">
-        <img src="assets/pokeworld.png" id="PokeBig" />
-        <a href="pokedex/"><img src="assets/Pokedex2.png" id="pokeDex" /></a>
+      <section id="logo">
+        <img src="assets/pokeLogo.png" alt="Logo" />
+        <h1>POKEWORLD</h1>
       </section>
+      <div id="txt">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Pesquisar" />
+      </div>
+    </header>
+    <section id="centro">
+      <img src="assets/pokeworld.png" id="PokeBig" />
+      <a href="pokedex/"><img src="assets/Pokedex2.png" id="pokeDex" /></a>
+    </section>
 
-      <section id="cards">
-        <div class="card charizard"></div>
-        <div class="card pika"></div>
-        <div class="card mew"></div>
-      </section>
+    <section id="cards">
+      <div class="card charizard"></div>
+      <div class="card pika"></div>
+      <div class="card mew"></div>
+    </section>
 
-      <section id="pokes_img">
-        <img id="esq" src="assets/image 28.png" alt="" />
-        <img id="meio" src="assets/R 1.png" alt="" />
-        <img
-          id="dir"
-          src="assets/507-5079769_espeon-png-espeon-pokemon 1.png"
-          alt=""
-        />
-      </section>
+    <section id="pokes_img">
+      <img id="esq" src="assets/image 28.png" alt="" />
+      <img id="meio" src="assets/R 1.png" alt="" />
+      <img id="dir" src="assets/507-5079769_espeon-png-espeon-pokemon 1.png" alt="" />
+    </section>
 
-      <section class="sobre_nos"> 
-        <div class="fundo_sobre_nos">  <a name="Sobre"></a>
-          <div class="texto">
-          <h1>SOBRE NÓS</h1> 
+    <section class="sobre_nos">
+      <div class="fundo_sobre_nos"> <a name="Sobre"></a>
+        <div class="texto">
+          <h1>SOBRE NÓS</h1>
           <p> Olá! Somos os pokerDevs e <br>
             essa é a nossa plataforma <br> pokerWorld. <br>
-           <br>Temos o intuito de trazer <br> a nostalgia e diversão aos <br> usuários fâs de <br> pokémon. <br>
-           <br>Desenvolvedores deste <br> projeto: Rafael, Verseck, <br> Julia, Gabriela, Diogo e <br> Jonatas</p>
-             <img class="ash"src="/assets/image 5.png" alt="ash">
+            <br>Temos o intuito de trazer <br> a nostalgia e diversão aos <br> usuários fâs de <br> pokémon. <br>
+            <br>Desenvolvedores deste <br> projeto: Rafael, Verseck, <br> Julia, Gabriela, Diogo e <br> Jonatas
+          </p>
+          <img class="ash" src="/assets/image 5.png" alt="ash">
 
         </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <div class="red"></div>
-      <img src="/assets/image 4.png" alt="">
+  <footer>
+    <div class="red"></div>
+    <img src="/assets/image 4.png" alt="">
 
-      <div class="cntt">
-        <h1>PokeWorld</h1>
-        <h2>Redes Sociais</h2>
+    <div class="cntt">
+      <h1>PokeWorld</h1>
+      <h2>Redes Sociais</h2>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="pokedex/">Pokédex</a></li>
@@ -95,16 +97,34 @@
       </ul>
     </div>
 
-      <div class="social">
-        <a href=""><img src="assets/a.png" alt=""></a>
-        <a href=""><img src="assets/a (1).png" alt=""></a>
-        <a href=""><img src="assets/a (2).png" alt=""></a>
-        <a href=""><img src="assets/a (3).png" alt=""></a>
-      </div>
+    <div class="social">
+      <a href=""><img src="assets/a.png" alt=""></a>
+      <a href=""><img src="assets/a (1).png" alt=""></a>
+      <a href=""><img src="assets/a (2).png" alt=""></a>
+      <a href=""><img src="assets/a (3).png" alt=""></a>
+    </div>
 
-      <div class="copy">
-        <p>© PokeWorld 2023. Evoluindo junto com Pokémon!</p>
-      </div>
-    </footer>
-  </body>
+    <div class="copy">
+      <p>© PokeWorld 2023. Evoluindo junto com Pokémon!</p>
+    </div>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
 </html>
