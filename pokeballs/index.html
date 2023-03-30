@@ -12,61 +12,64 @@
 <body>
     <script src="script.Js"></script>
     <main>
-        <header>
-            <div id="menu">
-                <div id="menu-bar" onclick="menuOnClick()">
-                  <div id="bar1" class="bar"></div>
-                  <div id="bar2" class="bar"></div>
-                  <div id="bar3" class="bar"></div>
-                </div>
-                <nav class="nav" id="nav">
-                  <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pokedex/index.html">Pokédex</a></li>
-                    <li><a href="../pokeballs/index.html">Pokeballs</a></li>
-                    <li><a href="../pokenet/index.html">Pokenet</a></li>
-                    <li><a href="../Login/index.html">Login</a></li>
-                  </ul>
-                </nav> 
-              </div>
-              <div class="menu-bg" id="menu-bg"></div>
+      <header>
+        <img class="bola" src="../assets/Frame 75.png" alt="Logo bola branca" />
+  
+        <div id="menu">
+          <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pokedex/index.html">Pokédex</a></li>
+              <li><a href="../pokeballs/index.html">Pokeballs</a></li>
+              <li><a href="../pokenet/index.html">Pokenet</a></li>
+              <li><a href="../Login/index.html">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+      </header>
 
-              <section id="logo">
-                <img src="../assets/pokeLogo.png" alt="">
-                <h1>POKEWORLD</h1>
-              </section>  
-              <div id="txt">
-                <input type="text"/>
-            </div>
-        </header>
+      <div>
+        <img class="A" src="../assets/Frame 76.png" alt="linha" />
+      </div>
 
         <h1 id="titulo">POKEBALLS</h1>
 
         <section id="pokeNomal">
             <div id="pk1">
-              <img class="pkballs" src="/assets/pokeball1.svg">
-              <p>Nome: Poké Ball Taxa de Captura: 1x Sobre: Usada para capturar pokémons selvagens em geral.</p>
+              <img class="pkballs" src="/assets/poke1.svg">
+              <p class="txtP">Nome: Poké Ball <br><br>
+                 Taxa de Captura: 1x <br> <br>
+                 Sobre: Usada para capturar pokémons selvagens em geral.</p>
             </div>
               
             <div id="pk2">
-              <img class="pkballs" src="/assets/pokeball2.svg">
-                  <p>Nome: Great Ball</p>
-                  <p> Taxa de Captura: 1,5×</p>
-                  <p> Sobre: Usada para capturar pokémons selvagens em geral, tendo 1,5× mais chances de captura que a pokébola comum.</p>
+              <img class="pkballs" src="/assets/poke2.svg">
+                  <p class="txtP">Nome: Great Ball <br><br>
+                     Taxa de Captura: 1,5× <br><br>
+                     Sobre: Usada para capturar pokémons selvagens em geral, tendo 1,5× mais chances de captura que a pokébola comum.</p>
             </div>
 
             <div id="pk3">
-              <img class="pkballs" src="/assets/pokeball3.svg">
-              <p>Nome: Ultra Ball Taxa de Captura: 2x 
+              <img class="pkballs" src="/assets/poke3.svg">
+              <p class="txtP">Nome: Ultra Ball <br><br>
+                Taxa de Captura: 2x <br><br>
                 Sobre:  Usada para capturar pokémons selvagens em geral,
                 tendo 2× mais chances de captura que a pokébola comum.</p>
             </div>
 
             <div id="pk4">
-              <img class="pkballs" src="/assets/pokeball4.svg">
-              <p>Nome: Master Ball Taxa de Captura: 100% 
+              <img class="pkballs" src="/assets/poke4.svg">
+              <p class="txtP">Nome: Master Ball <br><br>
+                Taxa de Captura: 100% <br><br>
                 Sobre: Usada para capturar pokémons selvagens em geral,
-                sem falhas, basta atirá-la sobre o pokémon que ele será capturado.</p>
+                sem falhas, basta atirá-la sobre o pokémon que ele será capturado.
+              </p>
               
             </div>
         </section>
@@ -79,37 +82,72 @@
         <section id="pokeFrutas">
           <div id="s1">
               <div id="pk5">
-
+                <img class="pkballs" src="/assets/poke5.svg">
+                <p class="txtP">Nome: Fast Ball<br><br>
+                   Taxa de Captura: 4× se usada em pokémons fujões ou velozes, 1× nos demais casos.<br><br>
+                   Sobre: Usada para capturar pokémons que fogem das batalhas ou que são muito velozes (velocidade base maior que 100).
+                </p>
               </div>
 
               <div id="pk6">
+                <img class="pkballs" src="/assets/poke6.svg">
 
+                <p class="txtP">Nome: Lure Ball<br><br>
+                  Taxa de Captura: 3×<br><br>
+                  Sobre: Usada para capturar pokémons que fogem das batalhas ou que são muito velozes.
+                </p>
               </div>
 
               <div id="pk7">
+                <img class="pkballs" src="/assets/poke7.svg">
 
+                <p class="txtP">Nome: Lure Ball Green<br><br>
+                  Taxa de Captura: 3× se usada em pokémons pescados.<br><br>
+                  Sobre: Esta Bola isca de coloração verde foi introduzida na 4ª geração. Tem a mesma funcionalidade da Bola Isca original, apenas uma coloração diferente.
               </div>
 
               <div id="pk8">
+                <img class="pkballs" src="/assets/poke8.svg">
 
+                <p class="txtP">Nome: Heavy Ball<br><br>
+                  Taxa de Captura:-20 se o pokémon pesa até 204,8kg;<br>
+                  +20 se pesa de 204,8 à 307,2kg;<br><br>
+                  Sobre: Usada para capturar pokémons pesados, quanto mais pesado for o pokémon, mais fácil será a captura.</p>
               </div>
           </div>
 
            <div id="s2">
               <div id="pk9">
+                <img class="pkballs" src="/assets/poke9.svg">
 
+                <p class="txtP">Nome: Love Ball<br><br> 
+                  Taxa de Captura: 8× se o pokémon selvagem for do sexo oposto ao seu, 1× nos demais casos.<br><br>
+                  Sobre: Usada para capturar pokémons do sexo oposto ao pokémon que você estiver usando na batalha, para quem sabe formar casais .</p>
               </div>
 
               <div id="pk10">
+                <img class="pkballs" src="/assets/poke10.svg">
 
+                <p class="txtP">Nome: Moon Ball<br><br>
+                  Taxa de Captura: 4× se usada em pokémons que evoluem com a pedra da lua, 1× nos demais casos.<br><br>
+                  Sobre: Usada para capturar pokémons que evoluem com a pedra da lua, como Clefairy, Jigglypuff, Nidoran, Skitty, Munna e suas evoluções.</p>
               </div>
 
               <div id="pk11">
+                <img class="pkballs" src="/assets/poke11.svg">
 
+                <p class="txtP">Nome:Level Ball<br><br>
+                  Taxa de Captura: 2× seu pokémon é de nível maior que o pokémon selvagem<br><br>
+                  Sobre: Capturar pokémons com o nível inferior do pokémon que estiver usando na batalha maiores as chances de captura.
+                </p>
               </div>
 
               <div id="pk12">
+                <img class="pkballs" src="/assets/poke12.svg">
 
+                <p class="txtP">Nome: Friend Ball<br><br>
+                  Taxa de Captura: 1× (a felicidade do pokémon capturado é elevada em 200)<br><br>
+                  Sobre: Usada para dar pontos de amizade ao pokémon capturado, recomendada para capturar pokémons que evoluem por felicidade.</p>
               </div>
            </div>
         </section>
@@ -121,22 +159,38 @@
 
         <section id="pokeDevon">
           <div id="pk13">
+            <img class="pkballs" src="/assets/poke13.svg">
 
+            <p class="txtP">Nome: Timer Ball<br><br>
+              Taxa de Captura: (1 + 0,3 × nº de turnos que se passaram na batalha)×, máximo de 4×<br><br>
+              Sobre: Quanto maior for o tempo da sua batalha (turnos), maiores serão as chances de capturar o pokémon.
+            </p>
           </div>
 
           <div id="pk14">
+            <img class="pkballs" src="/assets/poke14.svg">
 
+            <p class="txtP">Nome: Repeat Ball<br><br>
+              Taxa de Captura: 3× se usada em pokémons repetidos (3,5× a partir da 7ª geração), 1× nos demais casos.<br><br>
+              Sobre: Usada para capturar pokémons que você já tem registrado como capturado em sua Pokédex.</p>
           </div>
 
           <div id="pk15">
-
+            <img class="pkballs" src="/assets/poke15.svg">
+            <p class="txtP">Nome:Premiere Ball<br>
+              Taxa de Captura: 1×<br><br>
+              Sobre: Uma pokébola comemorativa, para se usar em quem quiser, sem nenhum efeito especial de captura (mesmo efeito que uma pokébola comum).</p>
           </div>
 
           <div id="pk16">
+            <img class="pkballs" src="/assets/poke16.svg">
+
+            <p class="txtP">Nome: Luxury Ball<br><br>
+              Taxa de Captura: 1× (altera a forma como a felicidade do pokémon capturado aumenta)<br><br>
+              Sobre: Usada para acelerar o crescimento de pontos de amizade do pokémon capturado, recomendada para capturar pokémons que evoluem por felicidade.</p>
 
           </div>
         </section>
-
     </main>
 </body>
 </html>
