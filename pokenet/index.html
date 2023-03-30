@@ -8,12 +8,30 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PokeNET</title>
+
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
   </head>
   <body>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
     <header>
       <img class="bola" src="../assets/Frame 75.png" alt="Logo bola branca" />
 
@@ -44,36 +62,36 @@
       <ul>
         <li class="list">
           <a href="#">
-            <span class="icon"></span>
-            <span class="list">Home</span>
+            <span class="icon"><img class="img1" src="../assets/pokeLogo.png" alt=""></span>
+            <span class="list">Trending topics</span>
           </a>
         </li>
 
         <li class="list">
           <a href="#">
-            <span class="icon"></span>
-            <span class="list">Home</span>
+            <span class="icon"><i class="fa-sharp fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></i></span>
+            <span class="list">pesquisar</span>
           </a>
         </li>
 
         <li class="list">
           <a href="#">
-            <span class="icon"><img class="lateral" src="" alt="" /></span>
-            <span class="list">Home</span>
+            <span class="icon"><i class="fa-sharp fa-solid fa-trophy" style="color: #ffffff;"></i></span>
+            <span class="list">Treinadores mais avaliados</span>
           </a>
         </li>
 
         <li class="list">
           <a href="#">
-            <span class="icon"></span>
-            <span class="list">Home</span>
+            <span class="icon"><i class="fa-solid fa-arrow-trend-up" style="color: #ffffff;"></i></span>
+            <span class="list">Posts mais curtidos</span>
           </a>
         </li>
 
         <li class="list">
           <a href="#">
-            <span class="icon"></span>
-            <span class="list">Home</span>
+            <span class="icon"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></span>
+            <span class="list">Posts mais comentados</span>
           </a>
         </li>
       </ul>
@@ -83,14 +101,14 @@
       <div class="Newpost">
         <div class="infouser"></div>
         <img class="imguser" src="../assets/user.jpg" />
-        <strong>Login ou registre-se</strong>
+        <strong>Login</strong>
         <form id="formulario">
           <textarea
             type="text"
             required
             id="comentario"
             name="textarea"
-            placeholder="Começe sua jornada aqui!!"
+            placeholder="Comece sua jornada aqui!!"
             cols="113"
             rows="4"
           ></textarea>
