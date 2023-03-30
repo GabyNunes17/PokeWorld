@@ -428,7 +428,7 @@ li:hover::after {
   #pokes_img {
     width: 35%;
     height: 35%;
-    margin-top: -35px;
+    margin-top: -65px;
     padding-left: 20px;
     margin-left: -37px;
     justify-content: space-between;
