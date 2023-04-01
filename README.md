@@ -28,7 +28,7 @@ Colabores:
 Diogo;           <a href="https://github.com/xDGxx">            - Github</a> <a href="https://www.linkedin.com/in/diogo-almeida-885498207/"> - LinkedIn</a>  <br>
 Gabriela Nunes;  <a href="https://github.com/GabyNunes17">      - Github</a> <a href="https://www.linkedin.com/in/gabriela-nunes-a4914222b/"> - LinkedIn</a><br>
 Rafeal Manchado; <a href="https://github.com/rafaelmachadobr">  - Github</a> <a href="https://www.linkedin.com/in/rafaelmachadobr/"> - LinkedIn</a> <br> 
-Raphael Verseck; <a href="https://github.com/Verseck">          - Github</a> <a href="https://www.linkedin.com/in/raphael-verseck-soleo-dos-santos-b58305207/"> - LinkedIn</a><br>
-Julia;           <a href="https://github.com/Julialost"></a>    - Github <a href="https://www.linkedin.com/in/julia-silva-85b997231/"> - LinkedIn</a><br>
+Raphael Verseck; <a href="https://github.com/Verseck">          - Github</a> <a href="https://www.linkedin.com/in/raphael-verseck-soleo-dos-santos-b58305207/"> LinkedIn</a><br>
+Julia;           <a href="https://www.linkedin.com/in/julia-silva-85b997231/">   - Github <a href="https://www.linkedin.com/in/julia-silva-85b997231/"> - LinkedIn</a><br>
 Jonatas.         <a href="https://github.com/Jonatas-Anjos">    - Github <a href="https://www.linkedin.com/in/jonatas-anjos/"> - LinkedIn</a></a>
 
