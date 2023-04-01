@@ -23,7 +23,7 @@ Linguaguens e ferramentas utilizadas foram:
 Para ver o design e prototipo do projeto acesse: 
 <a align="center" href="https://www.figma.com/file/hwjpR5jFzZZmTMbzzpMZKz/PokeWorld?node-id=0-1&t=b5Q7lqE1ATHROMrG-0">Figma </a></p>
 
-Colabores:
+Colaboradores:
 <br><br>
 Diogo;           <a href="https://github.com/xDGxx">            - Github</a> <a href="https://www.linkedin.com/in/diogo-almeida-885498207/"> - LinkedIn</a>  <br>
 Gabriela Nunes;  <a href="https://github.com/GabyNunes17">      - Github</a> <a href="https://www.linkedin.com/in/gabriela-nunes-a4914222b/"> - LinkedIn</a><br>
