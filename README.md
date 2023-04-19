@@ -7,6 +7,7 @@ Através da Pokeworld, os usuários podem acessar uma rede social exclusiva, ond
 Nós usamos várias tecnologias e ferramentas para desenvolver a Pokeworld, incluindo HTML, CSS, JavaScript e entre outros. Foi uma experiência fantástica trabalhar neste projeto, pois nos permitiu combinar nossa paixão por Pokémon com nossas habilidades de desenvolvimento web.
 
 Estamos muito animados em compartilhar a Pokeworld com a comunidade de desenvolvedores do Github. Esperamos que nossa plataforma possa inspirar outras pessoas a criar projetos que combinem suas paixões com suas habilidades de desenvolvimento. Fiquem à vontade para explorar o código-fonte da Pokeworld e fazer sugestões de melhoria ou até mesmo contribuir para o projeto. Obrigado por nos permitir compartilhar nossa plataforma com vocês!
+
 <br><br>
 Linguaguens e ferramentas utilizadas foram:
 
