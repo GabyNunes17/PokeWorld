@@ -1,4 +1,4 @@
-# PokéWorld
+# PokeWorld
 
 Olá a todos! Estamos empolgados em compartilhar com vocês um projeto incrível que desenvolvemos recentemente. A Pokeworld é uma plataforma dedicada a conectar fãs de Pokémon, fornecendo um espaço exclusivo para compartilhar informações e se divertir juntos.
 
